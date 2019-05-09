@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E958287228437D300F4AD43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E958286228437D300F4AD43 /* AppDelegate.m */; };
+		8E95828A228437D300F4AD43 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E958289228437D300F4AD43 /* ViewController.m */; };
+		8E95828D228437D300F4AD43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E95828B228437D300F4AD43 /* Main.storyboard */; };
+		8E95828F228437D400F4AD43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E95828E228437D400F4AD43 /* Assets.xcassets */; };
+		8E958292228437D400F4AD43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E958290228437D400F4AD43 /* LaunchScreen.storyboard */; };
+		8E958295228437D400F4AD43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E958294228437D400F4AD43 /* main.m */; };
+		8E95829F228437D500F4AD43 /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E95829E228437D500F4AD43 /* __Tests.m */; };
+		8E9582AA228437D500F4AD43 /* __UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9582A9228437D500F4AD43 /* __UITests.m */; };
+		8E9582BE228437FC00F4AD43 /* VoiceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9582B7228437FC00F4AD43 /* VoiceTool.m */; };
+		8E9582BF228437FC00F4AD43 /* noise_suppression.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E9582BC228437FC00F4AD43 /* noise_suppression.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E95829B228437D400F4AD43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E95827A228437D300F4AD43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E958281228437D300F4AD43;
+			remoteInfo = "降噪";
+		};
+		8E9582A6228437D500F4AD43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E95827A228437D300F4AD43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E958281228437D300F4AD43;
+			remoteInfo = "降噪";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8E958282228437D300F4AD43 /* 降噪.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "降噪.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E958285228437D300F4AD43 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8E958286228437D300F4AD43 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8E958288228437D300F4AD43 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8E958289228437D300F4AD43 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8E95828C228437D300F4AD43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E95828E228437D400F4AD43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E958291228437D400F4AD43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E958293228437D400F4AD43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E958294228437D400F4AD43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E95829A228437D400F4AD43 /* 降噪Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "降噪Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E95829E228437D500F4AD43 /* __Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __Tests.m; sourceTree = "<group>"; };
+		8E9582A0228437D500F4AD43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E9582A5228437D500F4AD43 /* 降噪UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "降噪UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E9582A9228437D500F4AD43 /* __UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __UITests.m; sourceTree = "<group>"; };
+		8E9582AB228437D500F4AD43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E9582B7228437FC00F4AD43 /* VoiceTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceTool.m; sourceTree = "<group>"; };
+		8E9582B9228437FC00F4AD43 /* timing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timing.h; sourceTree = "<group>"; };
+		8E9582BA228437FC00F4AD43 /* noise_suppression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = noise_suppression.h; sourceTree = "<group>"; };
+		8E9582BB228437FC00F4AD43 /* dr_wav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dr_wav.h; sourceTree = "<group>"; };
+		8E9582BC228437FC00F4AD43 /* noise_suppression.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = noise_suppression.c; sourceTree = "<group>"; };
+		8E9582BD228437FC00F4AD43 /* VoiceTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceTool.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E95827F228437D300F4AD43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E958297228437D400F4AD43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E9582A2228437D500F4AD43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E958279228437D300F4AD43 = {
+			isa = PBXGroup;
+			children = (
+				8E958284228437D300F4AD43 /* 降噪 */,
+				8E95829D228437D400F4AD43 /* 降噪Tests */,
+				8E9582A8228437D500F4AD43 /* 降噪UITests */,
+				8E958283228437D300F4AD43 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E958283228437D300F4AD43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E958282228437D300F4AD43 /* 降噪.app */,
+				8E95829A228437D400F4AD43 /* 降噪Tests.xctest */,
+				8E9582A5228437D500F4AD43 /* 降噪UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E958284228437D300F4AD43 /* 降噪 */ = {
+			isa = PBXGroup;
+			children = (
+				8E958285228437D300F4AD43 /* AppDelegate.h */,
+				8E958286228437D300F4AD43 /* AppDelegate.m */,
+				8E9582B8228437FC00F4AD43 /* SDK */,
+				8E9582BD228437FC00F4AD43 /* VoiceTool.h */,
+				8E9582B7228437FC00F4AD43 /* VoiceTool.m */,
+				8E958288228437D300F4AD43 /* ViewController.h */,
+				8E958289228437D300F4AD43 /* ViewController.m */,
+				8E95828B228437D300F4AD43 /* Main.storyboard */,
+				8E95828E228437D400F4AD43 /* Assets.xcassets */,
+				8E958290228437D400F4AD43 /* LaunchScreen.storyboard */,
+				8E958293228437D400F4AD43 /* Info.plist */,
+				8E958294228437D400F4AD43 /* main.m */,
+			);
+			path = "降噪";
+			sourceTree = "<group>";
+		};
+		8E95829D228437D400F4AD43 /* 降噪Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8E95829E228437D500F4AD43 /* __Tests.m */,
+				8E9582A0228437D500F4AD43 /* Info.plist */,
+			);
+			path = "降噪Tests";
+			sourceTree = "<group>";
+		};
+		8E9582A8228437D500F4AD43 /* 降噪UITests */ = {
+			isa = PBXGroup;
+			children = (
+				8E9582A9228437D500F4AD43 /* __UITests.m */,
+				8E9582AB228437D500F4AD43 /* Info.plist */,
+			);
+			path = "降噪UITests";
+			sourceTree = "<group>";
+		};
+		8E9582B8228437FC00F4AD43 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				8E9582B9228437FC00F4AD43 /* timing.h */,
+				8E9582BA228437FC00F4AD43 /* noise_suppression.h */,
+				8E9582BB228437FC00F4AD43 /* dr_wav.h */,
+				8E9582BC228437FC00F4AD43 /* noise_suppression.c */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E958281228437D300F4AD43 /* 降噪 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E9582AE228437D500F4AD43 /* Build configuration list for PBXNativeTarget "降噪" */;
+			buildPhases = (
+				8E95827E228437D300F4AD43 /* Sources */,
+				8E95827F228437D300F4AD43 /* Frameworks */,
+				8E958280228437D300F4AD43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "降噪";
+			productName = "降噪";
+			productReference = 8E958282228437D300F4AD43 /* 降噪.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E958299228437D400F4AD43 /* 降噪Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E9582B1228437D500F4AD43 /* Build configuration list for PBXNativeTarget "降噪Tests" */;
+			buildPhases = (
+				8E958296228437D400F4AD43 /* Sources */,
+				8E958297228437D400F4AD43 /* Frameworks */,
+				8E958298228437D400F4AD43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E95829C228437D400F4AD43 /* PBXTargetDependency */,
+			);
+			name = "降噪Tests";
+			productName = "降噪Tests";
+			productReference = 8E95829A228437D400F4AD43 /* 降噪Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8E9582A4228437D500F4AD43 /* 降噪UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E9582B4228437D500F4AD43 /* Build configuration list for PBXNativeTarget "降噪UITests" */;
+			buildPhases = (
+				8E9582A1228437D500F4AD43 /* Sources */,
+				8E9582A2228437D500F4AD43 /* Frameworks */,
+				8E9582A3228437D500F4AD43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E9582A7228437D500F4AD43 /* PBXTargetDependency */,
+			);
+			name = "降噪UITests";
+			productName = "降噪UITests";
+			productReference = 8E9582A5228437D500F4AD43 /* 降噪UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E95827A228437D300F4AD43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = com.cmcmid;
+				TargetAttributes = {
+					8E958281228437D300F4AD43 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					8E958299228437D400F4AD43 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 8E958281228437D300F4AD43;
+					};
+					8E9582A4228437D500F4AD43 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 8E958281228437D300F4AD43;
+					};
+				};
+			};
+			buildConfigurationList = 8E95827D228437D300F4AD43 /* Build configuration list for PBXProject "降噪" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E958279228437D300F4AD43;
+			productRefGroup = 8E958283228437D300F4AD43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E958281228437D300F4AD43 /* 降噪 */,
+				8E958299228437D400F4AD43 /* 降噪Tests */,
+				8E9582A4228437D500F4AD43 /* 降噪UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E958280228437D300F4AD43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E958292228437D400F4AD43 /* LaunchScreen.storyboard in Resources */,
+				8E95828F228437D400F4AD43 /* Assets.xcassets in Resources */,
+				8E95828D228437D300F4AD43 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E958298228437D400F4AD43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E9582A3228437D500F4AD43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E95827E228437D300F4AD43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E9582BF228437FC00F4AD43 /* noise_suppression.c in Sources */,
+				8E95828A228437D300F4AD43 /* ViewController.m in Sources */,
+				8E958295228437D400F4AD43 /* main.m in Sources */,
+				8E9582BE228437FC00F4AD43 /* VoiceTool.m in Sources */,
+				8E958287228437D300F4AD43 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E958296228437D400F4AD43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E95829F228437D500F4AD43 /* __Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E9582A1228437D500F4AD43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E9582AA228437D500F4AD43 /* __UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E95829C228437D400F4AD43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E958281228437D300F4AD43 /* 降噪 */;
+			targetProxy = 8E95829B228437D400F4AD43 /* PBXContainerItemProxy */;
+		};
+		8E9582A7228437D500F4AD43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E958281228437D300F4AD43 /* 降噪 */;
+			targetProxy = 8E9582A6228437D500F4AD43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8E95828B228437D300F4AD43 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E95828C228437D300F4AD43 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E958290228437D400F4AD43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E958291228437D400F4AD43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E9582AC228437D500F4AD43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8E9582AD228437D500F4AD43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E9582AF228437D500F4AD43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z6REBCT46T;
+				INFOPLIST_FILE = "降噪/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cmcmid.--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E9582B0228437D500F4AD43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z6REBCT46T;
+				INFOPLIST_FILE = "降噪/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cmcmid.--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8E9582B2228437D500F4AD43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z6REBCT46T;
+				INFOPLIST_FILE = "降噪Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cmcmid.--Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/降噪.app/降噪";
+			};
+			name = Debug;
+		};
+		8E9582B3228437D500F4AD43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z6REBCT46T;
+				INFOPLIST_FILE = "降噪Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cmcmid.--Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/降噪.app/降噪";
+			};
+			name = Release;
+		};
+		8E9582B5228437D500F4AD43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z6REBCT46T;
+				INFOPLIST_FILE = "降噪UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cmcmid.--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "降噪";
+			};
+			name = Debug;
+		};
+		8E9582B6228437D500F4AD43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z6REBCT46T;
+				INFOPLIST_FILE = "降噪UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cmcmid.--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "降噪";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E95827D228437D300F4AD43 /* Build configuration list for PBXProject "降噪" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E9582AC228437D500F4AD43 /* Debug */,
+				8E9582AD228437D500F4AD43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E9582AE228437D500F4AD43 /* Build configuration list for PBXNativeTarget "降噪" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E9582AF228437D500F4AD43 /* Debug */,
+				8E9582B0228437D500F4AD43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E9582B1228437D500F4AD43 /* Build configuration list for PBXNativeTarget "降噪Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E9582B2228437D500F4AD43 /* Debug */,
+				8E9582B3228437D500F4AD43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E9582B4228437D500F4AD43 /* Build configuration list for PBXNativeTarget "降噪UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E9582B5228437D500F4AD43 /* Debug */,
+				8E9582B6228437D500F4AD43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E95827A228437D300F4AD43 /* Project object */;
+}
